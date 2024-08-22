@@ -1,15 +1,3 @@
 # breath.css
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.24. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+`breath.css` is a _class-less_ CSS library that makes HTML looks pretty without hustle.
