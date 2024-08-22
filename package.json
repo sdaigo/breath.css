@@ -1,11 +1,26 @@
 {
-	"name": "breath.css",
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "1.8.3",
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	}
+  "name": "breath.css",
+  "version": "0.0.5",
+  "type": "module",
+  "scripts": {
+    "publish:vercel": "cp src/breath.css docs/."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdaigo/breath.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sdaigo/breath.css/issues"
+  },
+  "homepage": "https://breath-css.vercel.app",
+  "keywords": ["css", "classless"],
+  "author": "Daigo Shitara",
+  "license": "MIT"
 }
