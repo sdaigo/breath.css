@@ -30,10 +30,26 @@
     </header>
     <hr />
     <section>
-      <h2>Usage_</h2>
-      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/breath.css"&gt;</code></pre>
+      <h2>Usage</h2>
+      <p>minified version:</p>
+      <div class="copy">
+        <pre>&lt;link rel="stylesheet" href="https://unpkg.com/breath.css"&gt;</pre>
+      </div>
+
+      <p>non minified version:</p>
+      <div class="copy">
+        <pre>&lt;link rel="stylesheet" href="https://unpkg.com/breath.css/dist/breath.css"&gt;</pre>
+      </div>
     </section>
   </main>
+  <script>
+    const code = document.querySelectorAll('.copy')
+    for (const el of code) {
+      el.addEventListener('click', ev => {
+        navigator.clipboard.writeText(ev.target.textContent.trim())
+      })
+    }
+  </script>
 </body>
 
 </html>

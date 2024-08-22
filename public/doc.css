@@ -3,12 +3,40 @@ body {
 }
 
 main {
-  max-width: 48rem;
+  max-width: 42rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .horizontal {
   display: flex;
   align-items: center;
   gap: var(--space-2);
+}
+
+h2::after {
+  content: " _";
+  animation: blink .7s infinite alternate;
+}
+
+.copy {
+  position: relative;
+}
+
+.copy:hover::after {
+  content: 'copy';
+  position: absolute;
+  right: var(--space-2);
+  top: var(--space-3);
+  cursor: copy;
+  z-index: 1;
+  background-color: var(--background-inverted);
+  color: var(--foreground-inverted);
+  padding: var(--space-0\.5) var(--space-1);
+  border-radius: var(--radii);
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

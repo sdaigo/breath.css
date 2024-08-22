@@ -4,6 +4,10 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
 
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+
   "[css]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
