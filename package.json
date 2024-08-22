@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "esbuild --minify src/breath.css --outfile=dist/breath.min.css",
-    "prepublish": "bun run build",
-    "publish:vercel": "cp src/breath.css public/."
+    "prepublish": "bun run build"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
