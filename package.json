@@ -1,9 +1,10 @@
 {
   "name": "breath.css",
-  "version": "0.0.5",
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "build": "esbuild --minify src/breath.css --outfile=dist/breath.min.css",
+    "prepublish": "bun run build",
     "publish:vercel": "cp src/breath.css public/."
   },
   "devDependencies": {
