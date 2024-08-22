@@ -1,0 +1,11 @@
+{
+	"name": "breath.css",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
